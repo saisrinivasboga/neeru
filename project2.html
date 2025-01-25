@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project 2 - Python Projects </title>
+    <link rel="icon" href="./4.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pro_style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: white;" >  Python Based Project  </h1>
+        <!-- <h2> <u> Segmentation of Breast Tumor Using U-Net Architecture with Encoders and Decoders </u></h2> -->
+    </header>
+    
+    <section>
+        <h1 style="color: black;" > <u> Project 1 : &nbsp;Rock-Papers-scissors </u> </h1>
+
+        <h3> ↪ Project Description </h3>
+        <p> This is an interactive Rock, Paper, Scissors game built using Python's tkinter library. The game features a graphical user interface (GUI) where users can choose between "Rock", "Paper", or "Scissors" by clicking buttons. The computer also makes a random choice, and the result is displayed on the screen. The game keeps track of the number of wins for both the user and the computer and displays the updated score after each round. </p>
+        <p> In the game, players choose one of three options: rock, paper, or scissors, and compete against a computer that randomly generates its choice. The winner is decided based on these rules: </p>
+        <ul> 
+            <li> Rock beats Scissors. </li>
+            <li> Scissors beats Paper. </li>            
+            <li> Paper beats Rock. </li> 
+        </ul>
+
+        <h3> ↪ Programming Concepts Used </h3>
+        <ul>
+            <li> Use of Python's random module for the computer's choice. </li>
+            <li> Conditional statements (if-elif-else) to determine the game's logic. </li>
+            <li> Scorekeeping over multiple rounds. </li>
+            <li> The game uses the tkinter library to create a GUI. This includes widgets such as Label, Button, and Entry to interact with the user and display results. </li>
+            <li> Lambda functions are used in the button commands, such as command=lambda: play_game("rock"), to pass arguments to the play_game() function when a button is clicked. </li>
+            <li> The program continuously waits for user input through the root.mainloop() function. This is part of the event loop in tkinter, which listens for events like button clicks and handles them accordingly. </li>
+        </ul>
+
+        <h3> ↪ Sample Workflow </h3>
+        <ol>
+            <li> The user clicks one of the buttons ("Rock", "Paper", or "Scissors"). </li>
+            <li> The computer randomly selects its move. </li>
+            <li> The result is displayed on the screen, showing whether the user won, lost, or tied the round. </li>
+            <li> The score is updated and displayed, showing the number of wins for both the user and the computer. </li>
+        </ol>
+
+        <h3> ↪ GitHub Link  </h3>
+        <p style="padding: 0px 100px;"> You can find the related code here <a href="https://github.com/NeerajaJonnadula/Rock_Papers_Scissors"> Click </a> </p>
+    </section>
+
+
+    <section>
+        <h1 style="color: black;" > <u> Project 2 : &nbsp;Password Generator </u> </h1>
+
+        <h3> ↪ Project Description </h3>
+        <p>The Password Generator is a simple Python-based GUI application built using the tkinter library. It allows users to generate random passwords and copy them to the clipboard for easy use. The generated passwords are composed of a mix of uppercase letters, lowercase letters, numbers, and special characters, providing a variety of combinations suitable for secure password creation. </p>
+        <ul> 
+            <li> GUI Interface: A user-friendly graphical interface built with tkinter includes a label, button, and entry widget to display the generated password. </li>
+            <li> Clipboard Functionality: The password can be easily copied to the clipboard using the pyperclip library for quick pasting into other applications. </li>            
+        </ul>
+
+        <h3> ↪ Programming Concepts Used </h3>
+        <ol>
+            <li> Modules and Libraries </li>
+            <ul type="disc">
+                <li>tkinter: Used to create the graphical user interface (GUI).</li>
+                <li>random: Used to generate random characters for the password.</li>
+                <li>pyperclip: Used to copy the generated password to the clipboard.</li>
+            </ul>
+
+            <li> Functions </li>
+            <ul type="disc">
+                <li>generate(): A function that generates a random password by selecting random characters from a predefined list.</li>
+                <li>copyclipboard(): A function that copies the generated password to the clipboard using the pyperclip module.</li>
+            </ul>
+
+            <li>  Graphical User Interface (GUI) Design </li>
+            <ul type="disc">
+                <li>Label: Used to display static text in the GUI.</li>
+                <li>Button: Used to create interactive buttons for generating a password and copying it to the clipboard.</li>
+                <li>Entry: Used to display the generated password in a text box.</li>
+                <li>pack(): Used to position and manage widgets in the GUI.</li>
+            </ul>
+
+            <li> Dynamic Updates </li>
+            <ul type="disc">
+                <li>The value of passwrd is updated using set() and displayed in the Entry widget dynamically.</li>
+            </ul>
+
+            <li> GUI Window Management </li>
+            <ul type="disc">
+                <li>Tk(): Initializes the root window.</li>
+                <li>geometry(): Sets the dimensions of the window.</li>
+                <li>mainloop(): Starts the event loop to keep the GUI active and responsive.</li>
+            </ul>
+        </ol>
+        
+        <h3> ↪ Sample Workflow </h3>
+        <ol>
+            <li> User clicks the "Generate Password" button. </li>
+            <li> A random password is generated and displayed in the text entry field. </li>
+            <li> User clicks the "Copy to Clipboard" button to copy the generated password </li>
+        </ol>
+
+        <h3> ↪ GitHub Link  </h3>
+        <p style="padding: 0px 100px;"> You can find the related code here <a href="https://github.com/NeerajaJonnadula/password-generator"> Click </a> </p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Neeraja Jonnadula. All rights reserved.</p>
+    </footer>
+</body>
+</html>
